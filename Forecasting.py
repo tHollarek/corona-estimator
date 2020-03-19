@@ -51,5 +51,6 @@ def show_forecast_with_lockdown(days_to_forecast, lockdown_date, input_params):
 def plot(name, cases, days_with_cases, days_with_model_values, model_values):
     plt.scatter(days_with_cases, cases)
     plt.plot(days_with_model_values, model_values, label=name)
+    plt.xticks(rotation=45)
     plt.legend()
     plt.show()
