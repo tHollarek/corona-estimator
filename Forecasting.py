@@ -5,7 +5,7 @@ from LogisticGrowth import calculate_logistic_function_params, \
     total_cases_from_params, calculate_params_constrained
 
 
-def calculate_forecast(days_to_forecast, input_params):
+def show_forecast(days_to_forecast, input_params):
     name = input_params[0]
     start_date = input_params[1]
     cases = input_params[2]
@@ -26,7 +26,7 @@ def calculate_forecast(days_to_forecast, input_params):
     print("successfully created forecast")
 
 
-def calculate_forecast_with_lockdown(days_to_forecast, lockdown_date, input_params):
+def show_forecast_with_lockdown(days_to_forecast, lockdown_date, input_params):
     name = input_params[0]
     start_date = input_params[1]
     cases = input_params[2]
